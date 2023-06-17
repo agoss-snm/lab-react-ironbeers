@@ -1,15 +1,26 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
+import axios from 'axios';
 
-function SingleBeer({ beers }) {
+function SingleBeer() {
   const { beerID } = useParams();
   const [beer, setBeer] = useState(null);
 
   useEffect(() => {
-    const selectedBeer = beers.find((beer) => beer._id === beerID);
-    setBeer(selectedBeer);
-  }, [beerID, beers]);
+    const getBeer = async () => {
+      try {
+        const response = await axios.get(
+          `https://ih-beers-api2.herokuapp.com/beers/${beerID}`
+        );
+        setBeer(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getBeer();
+  }, [beerID]);
 
   return (
     <div>
@@ -38,7 +49,9 @@ function SingleBeer({ beers }) {
           <button className='buttonHome'>
             <Link to="/"> <p className='white'>Home</p></Link>
           </button>
-          <button className='buttonHome'><Link to="/beers"><p className='white'>Back List of Beers</p></Link></button>
+          <button className='buttonHome'>
+            <Link to="/beers"><p className='white'>Back to List of Beers</p></Link>
+          </button>
         </div>
       ) : (
         <p>Loading...</p>
