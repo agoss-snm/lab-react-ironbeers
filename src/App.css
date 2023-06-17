@@ -4,6 +4,7 @@
 
 .content{
   margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 #header{
   background-color: rgb(86, 192, 237);
@@ -98,10 +99,37 @@ form{
 
 input{
   border-radius: 10px;
-  border: 1px solid rgb(0, 174, 255);
-  font-size: 2vh;
+  border: 2px solid rgb(0, 174, 255);
+  font-size: 3vh;
 }
 
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+.buttonHome {
+  border:none;
+  background-color: rgb(0, 174, 255) ;
+  border-radius: 10px;
+ padding: 1vh;
+ color: white;
+}
+
+.white{
+  color: white;
+}
+
+p{
+  font-size: 3vh;
+}
+.dark{
+  color: rgb(0, 174, 255);
+}
   @media only screen and (max-width : 450px) {
     .imgCard{
       max-height: 10vh;
@@ -111,3 +139,13 @@ input{
       grid-template-columns: 1fr;
     }
     }
+
+    @media only screen and (min-width: 451px) and (max-width: 800px) {
+      .imgCard{
+        max-height: 10vh;
+      }
+      .cardsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      }

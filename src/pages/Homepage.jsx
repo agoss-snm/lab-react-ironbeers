@@ -12,9 +12,10 @@ function HomePage() {
             <Card className='card'>
                 <Card.Img className='imgCard' variant="top" src={BeersPhoto}/>
                 <Card.Body>
+                <Link to='/beers'> <h1 className='dark'>All Beers</h1> </Link>
                     <Card.Text>
-                    <Link to='/beers'>All Beers </Link>
-                    <p className='textCard'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!</p>
+                    
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!
                     </Card.Text>
                 </Card.Body>
             </Card>
@@ -22,9 +23,9 @@ function HomePage() {
             <Card className='card'>
                 <Card.Img className='imgCard' variant="top" src={NearBearPhoto} />
                 <Card.Body>
+                <Link to='/new-beer'> <h1 className='dark'> New-Beer </h1></Link>
                     <Card.Text>
-                    <Link to='/new-beer'> New-Beer </Link>
-                    <p className='textCard'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!</p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!
                     </Card.Text>
                 </Card.Body>
             </Card>
@@ -32,9 +33,9 @@ function HomePage() {
             <Card className='card'>
             <Card.Img className='imgCard' variant="top" src={RandomPhoto}/>
                 <Card.Body>
+                <Link to='/randomBeer'> <h1 className='dark'> Random-Beer </h1></Link>
                     <Card.Text>
-                    <Link to='/randomBeer'>   Random-Beer </Link>
-                       <p className='textCard'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!</p>
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur a in!
                     </Card.Text>
                 </Card.Body>
             </Card>

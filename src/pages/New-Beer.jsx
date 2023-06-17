@@ -40,7 +40,7 @@ function NewBeer({ addBeer }) {
             <div className='Container-F'>
                 
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="name">Name:</label>
+                        <label htmlFor="name"><p>Name:</p></label>
                         <input
                             type="text"
                             id="name"
@@ -49,7 +49,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="tagline">Tagline:</label>
+                        <label htmlFor="tagline"> <p>Tagline:</p></label>
                         <input
                             type="text"
                             id="tagline"
@@ -58,7 +58,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="description">Description:</label>
+                        <label htmlFor="description"> <p>Description:</p></label>
                         <input
                             type="text"
                             id="description"
@@ -67,7 +67,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="first_brewed">First Brewed:</label>
+                        <label htmlFor="first_brewed"><p>First Brewed:</p></label>
                         <input
                             type="text"
                             id="first_brewed"
@@ -76,7 +76,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="brewers_tips">Brewer's Tips:</label>
+                        <label htmlFor="brewers_tips"><p>Brewer's Tips:</p></label>
                         <input
                             type="text"
                             id="brewers_tips"
@@ -85,7 +85,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="attenuation_level">Attenuation Level:</label>
+                        <label htmlFor="attenuation_level"><p>Attenuation Level:</p></label>
                         <input
                             type="number"
                             id="attenuation_level"
@@ -94,7 +94,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="contributed_by">Contributed By:</label>
+                        <label htmlFor="contributed_by"><p>Contributed By:</p></label>
                         <input
                             type="text"
                             id="contributed_by"
@@ -103,7 +103,7 @@ function NewBeer({ addBeer }) {
                             onChange={handleChange}
                         />
 
-                        <button className='submit' type="submit">Create Beer</button>
+                        <button className='submit' type="submit"><p>Create Beer</p></button>
                     </form>
             </div>
 

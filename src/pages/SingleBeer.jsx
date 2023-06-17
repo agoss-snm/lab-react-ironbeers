@@ -36,9 +36,9 @@ function SingleBeer({ beers }) {
             </>
           </div>
           <button className='buttonHome'>
-            <Link to="/">Back Home</Link>
+            <Link to="/"> <p className='white'>Home</p></Link>
           </button>
-          <button className='buttonHome'><Link to="/beers">Back List of Beers</Link></button>
+          <button className='buttonHome'><Link to="/beers"><p className='white'>Back List of Beers</p></Link></button>
         </div>
       ) : (
         <p>Loading...</p>
